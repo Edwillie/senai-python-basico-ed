@@ -45,3 +45,4 @@ Treino de digitação: site <a href="https://monkeytype.com/"> monkey type </a>
 - Conversão de tipos
     - int(): Convertendo para valor numérico inteiro
     - float(): Convertendo para valor numérico decimal
+- Programinha de desafio da aula: Calculo da média.     
