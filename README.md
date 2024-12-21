@@ -40,4 +40,8 @@ Treino de digitação: site <a href="https://monkeytype.com/"> monkey type </a>
         - Pode ocasionar erro no interpretador. Ou invalidar metodos, por exemplo print.
     - Boas Praticas: Use padrões de nomenclatura, como camelcase. ex: nomeDaVariavel
 - Solicitando dados do usuario (input)
+    - Input sempre coleta dados em formato texto
 - Colocando tudo junto: Usando format para criar mensagens combinadas: f"{Variavel} restante do texto"
+- Conversão de tipos
+    - int(): Convertendo para valor numérico inteiro
+    - float(): Convertendo para valor numérico decimal

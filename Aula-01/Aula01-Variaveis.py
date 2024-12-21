@@ -22,3 +22,9 @@ seuPratoFavorito = input(f"{seuNome}, Me diz qual seu prato favorito? ")
 
 print("Agora aprendi que o prato favorito do {seuNome} é: {seuPratoFavorito}")
 
+#Outra forma de input
+#Obs: Input sempre coleta o valor em formato texto
+num1, num2 = int(input("Digite o valor inteiro: ")), float(input("Digite o valor decimal: "))
+soma = num1 + num2
+
+print(f'O resultado foi: {soma}')
