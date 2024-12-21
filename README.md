@@ -13,4 +13,10 @@ Caso o virtualenv não funcione, aplique o comando abaixo
 - Primeiro código no interpretador do python
 - Segundo código no IDE do python
 - Terceiro código no VSCode
+    - Executando o código no VSCode
+    - Limpando terminais
+- Praticando emissão de mensagens
+    - Usando "\n" para quebra de linhas
+    - Utilização de escapes "\" para tratamentos especiais.
+    - Alternando entre aspas e apostrofes
 
