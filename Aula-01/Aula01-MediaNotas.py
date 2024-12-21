@@ -6,4 +6,4 @@ nota4 = float(input('Qual foi sua 4a nota?\n'))
 
 media = (nota1 + nota2 + nota3 + nota4) / 4
 
-print(f'Sua média foi {media}!!!')
+print(f'Sua média foi {media}!!!') 

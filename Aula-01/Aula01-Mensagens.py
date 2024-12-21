@@ -28,4 +28,4 @@ print("Nova mensagem") #Não quebra a linha por conta do end do comando anterior
 
 #end - fica tudo na mesma linha
 print("Comecei aqui", end=" ")
-print("Terminei aqui")
+print("Terminei aqui") 
