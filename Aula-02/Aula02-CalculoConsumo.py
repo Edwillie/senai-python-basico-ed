@@ -6,7 +6,7 @@ consumo = input('Informe o consumo em WATTS: ')
 if not consumo=='':
     print(f'O tipo da variavel de consumo, ANTES da conversão é: {type(consumo)}')
 
-    consumo = float(consumo)
+    consumo = int(consumo)
     print(f'O tipo da variavel de consumo, DEPOIS da conversão é: {type(consumo)}')
 
     if consumo <= 100:
