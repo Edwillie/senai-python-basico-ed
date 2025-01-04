@@ -23,7 +23,7 @@ if not valor_compra=='' and not km_distancia=='':
         msg_frete = 'frete grátis'
     else:
         frete_compra = frete_calculado
-        msg_frete = f'valor do frete calculado em {frete_compra:.2f}. Onde a distancia informada, possui uma tarifa de {valor_frete:.2f}/km'
+        msg_frete = f'valor do frete calculado em {frete_compra:.2f}. Onde, para {km_distancia} km de distancia, a tarifa é de {valor_frete:.2f}/km'
 
     valor_final = valor_compra + frete_compra       
 
