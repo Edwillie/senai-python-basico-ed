@@ -33,4 +33,12 @@ print(f'4. Gerando lista de preços da loja do Sr. Manoel Joaquim')
 print(f'Lojas Quase Dois - Tabela de Preços')
 for i in range(0, limite, 1):
     valor = (i + 1) * 1.99
-    print(f'{i + 1:02} - R${valor:.2f}')
+    print(f'{i + 1:02} - R$ {valor:05.2f}') 
+    '''
+        o que significa: :05.2f ???
+        05  - formatação em 5 caracteres, complementando com zeros a esquerda
+        .2f - formatação de 2 caracteres como decimais.
+
+        lembre-se 
+        000.00 - 5 caracteres com 2 decimais, preenchendo com zeros a esquerda.
+    '''
