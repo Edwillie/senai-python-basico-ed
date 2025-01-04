@@ -16,3 +16,16 @@ for i in range(10):
 ```
 
 - While: Utilizado com laços controlados por condicionais
+```python
+condicao = True
+contador = 0
+
+while condicao: #Executa enquanto a condição for verdadeira!
+    print(f'Contador em {contador}')
+
+    resp = input('Continuo contando (Sim / Não)? ')
+    if resp.upper() == 'S' or resp.upper() == 'SIM':
+        contador += 1
+    else:
+        condicao = False    
+```
