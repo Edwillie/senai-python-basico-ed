@@ -16,6 +16,8 @@ while tentativas < 5: #Executa enquanto a condição for verdadeira!
     elif resp == numero_secreto:
         print(f'Sim Tidas! Lutaremos contra {numero_secreto} persas! Ahul!')
         break
+    else:
+        print('Desculpa Tidas! Até eu me perdi!')
 
 else:
     print(f'Tidas, lutaremos contra {numero_secreto} persas! Ahul!')
