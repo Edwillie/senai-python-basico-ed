@@ -2,7 +2,7 @@ import os
 import random
 
 os.system('cls')
-numero_secreto = random.randrange(0, 300000)
+numero_secreto = random.randint(0, 300000)
 tentativas = 0
 
 while tentativas < 5: #Executa enquanto a condição for verdadeira!
