@@ -64,3 +64,29 @@ while True: #Executa enquanto a condição for verdadeira!
     else:
         break
 ```
+
+## Bibliotecas
+Você pode utilizar bibliotecas para "turbinar" o código.
+
+Para isso, devemos usar o comando import. E com ele, indicar a biblioteca que queremos.
+Depois de importada a biblioteca, podemos trabalhar com suas funções!
+
+```python
+import os       #biblioteca de interatividade com o sistema operacional
+import time     #biblioteca com funções para trabalhar com tempo
+import random   #biblioteca com funções para trabalhar com dados aleatórios
+```
+
+> _Recomenda-se que as importações de bibliotecas sejam feitas no inicio do programa._
+
+> _**OBS** Não crie variaveis com os nomes das funções ou das bibliotecas. O programa pode travar_
+
+```python
+import os       #biblioteca de interatividade com o sistema operacional
+import time     #biblioteca com funções para trabalhar com tempo
+import random   #biblioteca com funções para trabalhar com dados aleatórios
+
+os.system('cls')    #limpa a tela
+time.sleep(5)       #faz o programa pausar por 5 segundos
+valor = random.randint(1,10) #gera um numero aleatório entre 1 e 10
+```
