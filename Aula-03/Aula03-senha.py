@@ -1,4 +1,5 @@
 import os
+import time
 os.system('cls')
 
 check_user = '######@#####.com'
@@ -19,6 +20,8 @@ while check_user != usuario and check_senha != senha and tentativas <=3:
     else:
         if (3 - tentativas) > 0:
             print(f'Incorreto!\nTente novamente! Você possui {3 - tentativas} tentativas restantes!')
+            time.sleep(5)
+            os.system('cls')
         else:
             print('Você falhou miseravelmente!')
 
