@@ -1,7 +1,7 @@
 import os
 os.system('cls')
 
-check_user = 'edwillie@gmail.com'
+check_user = '######@#####.com'
 check_senha = 'senha'
 
 usuario = ''
