@@ -89,4 +89,4 @@ print(outrosNomes.len()) #Mostra que ainda temos 3 nomes
 ```
 ### Funções importantes - Removendo Valores de uma lista
 
-### Funções importantes - Outras formas de manipular uma lista
+### Funções importantes - Outras formas de trabalhar uma lista
