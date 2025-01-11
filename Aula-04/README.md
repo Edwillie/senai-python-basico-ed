@@ -21,7 +21,7 @@ Palavra = "Ayrton Senna" #string com 12 caracteres. Pode contar ai!
 print(Palavra[7:1]) #Lembre que as contagens começam de zero. Aqui vamos imprimir a letra "S"
 ```
 
-### Funções importantes
+### Funções importantes - Entendendo o conteúdo de uma lista
 
 Para contar quantos elementos temos dentro de uma lista, podemos usar a função **_len()_**
 
@@ -43,6 +43,7 @@ nomes = ['José', 'Joaquim', 'Manoel', 'Joaquim', 'Maria', 'Abreu']   #Lista de 
 print(nomes.count('Joaquim'))  #Imprime 2 na tela. Referente a quantidade de vezes que "Joaquim" está na lista
 ```
 
+### Funções importantes - Inserindo valores em uma lista
 Para incluir um valor na lista (mesmo que esteja vazia), usamos a função **_append()_**
 
 ```python
@@ -53,3 +54,39 @@ nomes.append('Juca')
 nomes.append('Senai')
 print(nomes)  #Imprime as palavras Juca e Senai
 ```
+
+Para inserir em uma posição especifica da lista, use a função **_insert()_**
+> **OBS** Os demais elementos, serão movidos para a proxima posição na lista.
+
+```python
+nomes = ["Matheus", "Lucas", "Joaquim"]   
+print(nomes)  #Imprime os nomes na lista
+print(nomes.len()) #Mostra que temos 3 nomes
+
+nomes.insert(2, 'Juca')
+print(nomes)  #Imprime os nomes na lista. Agora com Juca, sendo ele, antes de Joaquim.
+print(nomes.len()) #Mostra que temos 4 nomes
+```
+
+Para estender lista, com base em outras listas, use a função **_extend()_** ou até mesmo "some" as listas, usando o operador "+"
+
+```python
+nomes = ["Matheus", "Lucas", "Joaquim"] 
+outrosNomes = ["Fulano", "Beltrano", "Deltrano"]   
+print(nomes)  #Imprime os nomes na lista
+print(nomes.len()) #Mostra que temos 3 nomes
+
+print(outrosNomes)  #Imprime os nomes na lista
+print(outrosNomes.len()) #Mostra que temos 3 nomes
+
+
+nomes.extend(outrosNomes)
+print(nomes)  #Imprime os nomes na lista e seus novos valores ao final
+print(nomes.len()) #Mostra que temos 6 nomes
+
+print(outrosNomes)  #Imprime os nomes na lista
+print(outrosNomes.len()) #Mostra que ainda temos 3 nomes
+```
+### Funções importantes - Removendo Valores de uma lista
+
+### Funções importantes - Outras formas de manipular uma lista
