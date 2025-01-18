@@ -7,6 +7,9 @@ Caso o virtualenv não funcione, aplique o comando abaixo
 
 Treino de digitação: site <a href="https://monkeytype.com/"> monkey type </a>
 
+## Curso de Fundamentos da CISCO
+https://www.netacad.com/courses/python-essentials-1?courseLang=pt-BR
+
 ## Cronograma de Aulas
 
 | Aulas   | Datas      |
