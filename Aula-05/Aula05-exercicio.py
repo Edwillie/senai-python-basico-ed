@@ -20,7 +20,11 @@ def f_multiplica(resultado, valorentrado):
 
 #Função de Caluladora - Divisão
 def f_divide(resultado, valorentrado):
-    return resultado / valorentrado
+    if valorentrado == 0:
+        print('Valor inválido para divisão... Não vou fazer essa conta!')
+        return resultado
+    else:
+        return resultado / valorentrado
 
 ## Daqui pra baixo, é o programa principal que consome as funções declaradas acima.
 os.system('cls')
