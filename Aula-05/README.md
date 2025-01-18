@@ -25,3 +25,28 @@ def meuprint(texto):
 minhamensagem = input('Qual mensagem você quer apresentar? ')
 meuprint(minhamensagem)  # Chamando a função criada internamente.
 ```
+
+## Dicionários e Tuplas
+Dicionário é um tipo de dado composto no python. Composto por 2 elementos:
+- Chave: Identificação (nomeação) de um valor
+- Valor: Informação carregada.
+
+Podemos dizer que um dicionário é um conjunto de variáveis.
+
+Exemplo:
+```python
+# Antes de conhecermos dicionário:
+Nome_Pessoa1 = 'José'
+Idade_Pessoa1 = 25
+
+Nome_Pessoa2 = 'Abreu'
+Idade_Pessoa2 = 30
+
+Nome_Pessoa3 = 'Carlos'
+Idade_Pessoa3 = 17
+
+# Depois de conhecermos dicionário:
+Pessoa1 = {'Nome':'José', 'Idade': 25}
+Pessoa2 = {'Nome':'Abreu', 'Idade': 30}
+Pessoa3 = {'Nome':'Carlos', 'Idade': 17}
+```
