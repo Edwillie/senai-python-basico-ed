@@ -26,7 +26,7 @@ minhamensagem = input('Qual mensagem você quer apresentar? ')
 meuprint(minhamensagem)  # Chamando a função criada internamente.
 ```
 
-## Dicionários e Tuplas
+## Dicionários
 Dicionário é um tipo de dado composto no python. Composto por 2 elementos:
 - Chave: Identificação (nomeação) de um valor
 - Valor: Informação carregada.
