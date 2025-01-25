@@ -25,7 +25,7 @@ def newFoneContact():
     lTelefone = input('Digite o telefone do Contato: ')
 
     if lNome in ldic_listatel.keys():
-        print(f'Ooooops, {lNome} já existe na sua lista. Com o telefone: {ldic_listatel[lNome]}')
+        print(f'\n\nOoooops, {lNome} já existe na sua lista. Com o telefone: {ldic_listatel[lNome]}')
 
         opupdate = input('\nDeseja atualizar o contato com o telefone informado (S/N)? ')
 
