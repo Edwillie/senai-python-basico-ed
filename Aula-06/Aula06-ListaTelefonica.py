@@ -43,7 +43,7 @@ def listFoneContacts():
     print('***** AGENDA ATUALIZADA *****')
 
     for lnome, ltel in gDicListatel.items():
-        print(f'{lnome.upper()} : {ltel}')
+        print(f'{lnome} : {ltel}')
 
     input('\n\n\nPressione qualquer tecla para continuar...')    
 
