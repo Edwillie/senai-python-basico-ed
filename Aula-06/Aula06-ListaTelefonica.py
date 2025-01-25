@@ -3,7 +3,7 @@ import os
 import time
 
 #Declarando a variavel global para o dicionário
-ldic_listatel = {}
+gDicListatel = {}
 
 #Declaração de funções específicas desse programa
 #Função para listar as opções
@@ -24,17 +24,17 @@ def newFoneContact():
     lNome = input('Digite o nome do Contato: ')
     lTelefone = input('Digite o telefone do Contato: ')
 
-    if lNome in ldic_listatel.keys():
-        print(f'\n\nOoooops, {lNome} já existe na sua lista. Com o telefone: {ldic_listatel[lNome]}')
+    if lNome in gDicListatel.keys():
+        print(f'\n\nOoooops, {lNome} já existe na sua lista. Com o telefone: {gDicListatel[lNome]}')
 
         opupdate = input('\nDeseja atualizar o contato com o telefone informado (S/N)? ')
 
         if opupdate.upper() == 'S':
-            ldic_listatel[lNome] = lTelefone
+            gDicListatel[lNome] = lTelefone
             print('\nContato Atualizado.')
 
     else:
-        ldic_listatel[lNome] = lTelefone
+        gDicListatel[lNome] = lTelefone
         print('\nContato Registrado.')
 
 #Função para listar os contatos existentes no dicionário
@@ -42,8 +42,8 @@ def listFoneContacts():
     os.system('cls')    
     print('***** AGENDA ATUALIZADA *****')
 
-    for lnome, ltel in ldic_listatel.items():
-        print(f'{lnome.upper()} : {ltel}')
+    for lnome, ltel in gDicListatel.items():
+        print(f'{lnome} : {ltel}')
 
     input('\n\n\nPressione qualquer tecla para continuar...')    
 
@@ -58,6 +58,7 @@ while True:
     elif popcao == '2':
         listFoneContacts()
     elif popcao == '3':
+        print('Obrigado por usar nossa lista. Tchau!')
         break
     else:
         os.system('cls')
