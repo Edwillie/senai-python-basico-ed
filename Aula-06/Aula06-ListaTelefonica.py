@@ -2,11 +2,12 @@
 import os
 import time
 
+#Declarando a variavel global para o dicionário
+ldic_listatel = {}
 
 #Declaração de funções específicas desse programa
 #Função para listar as opções
 def menuOpcoes():
-    os.system('cls')    
     print('***** BEM VINDO A AGENDA DE TELEFONE! *****')
     print('\nOPÇÕES:')
     print('1- Inserir um contato')
@@ -23,14 +24,19 @@ def newFoneContact():
     lNome = input('Digite o nome do Contato: ')
     lTelefone = input('Digite o telefone do Contato: ')
 
+    ldic_listatel[lNome] = lTelefone
+
+    print('\nContato Registrado.')
+
 
 
 #Iniciando o programa
 while True:
+    os.system('cls')    
     popcao = menuOpcoes()
 
     if popcao == '1':
-        pass
+        newFoneContact()
     elif popcao == '2':
         pass
     elif popcao == '3':
