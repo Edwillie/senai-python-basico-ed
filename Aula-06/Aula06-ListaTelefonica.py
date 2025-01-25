@@ -24,9 +24,18 @@ def newFoneContact():
     lNome = input('Digite o nome do Contato: ')
     lTelefone = input('Digite o telefone do Contato: ')
 
-    ldic_listatel[lNome] = lTelefone
+    if lNome in ldic_listatel.keys():
+        print(f'Ooooops, {lNome} já existe na sua lista. Com o telefone: {ldic_listatel[lNome]}')
 
-    print('\nContato Registrado.')
+        opupdate = input('\nDeseja atualizar o contato com o telefone informado (S/N)? ')
+
+        if opupdate.upper() == 'S':
+            ldic_listatel[lNome] = lTelefone
+            print('\nContato Atualizado.')
+
+    else:
+        ldic_listatel[lNome] = lTelefone
+        print('\nContato Registrado.')
 
 #Função para listar os contatos existentes no dicionário
 def listFoneContacts():
