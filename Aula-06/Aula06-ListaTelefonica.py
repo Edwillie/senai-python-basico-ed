@@ -36,6 +36,8 @@ def listFoneContacts():
     for lnome, ltel in ldic_listatel.items():
         print(f'{lnome.upper()} : {ltel}')
 
+    input('\n\n\nPressione qualquer tecla para continuar...')    
+
 
 #Iniciando o programa
 while True:
@@ -45,7 +47,7 @@ while True:
     if popcao == '1':
         newFoneContact()
     elif popcao == '2':
-        pass
+        listFoneContacts()
     elif popcao == '3':
         break
     else:
