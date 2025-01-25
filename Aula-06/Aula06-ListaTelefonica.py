@@ -1,6 +1,7 @@
 #Importando as bibliotecas para este programa
 import os
 import time
+import msvcrt
 
 #Declarando a variavel global para o dicionário
 gDicListatel = {}
@@ -45,7 +46,9 @@ def listFoneContacts():
     for lnome, ltel in gDicListatel.items():
         print(f'{lnome} : {ltel}')
 
-    input('\n\n\nPressione qualquer tecla para continuar...')    
+    # input('\n\n\nPressione qualquer tecla para continuar...') # Até funciona, se o usuario intuitivamente pressionar diretamente o enter 
+    print('\n\n\nPressione qualquer tecla para continuar...')
+    msvcrt.getche()  
 
 
 #Iniciando o programa
