@@ -45,3 +45,56 @@ for minha_chave, meu_valor in MyGroup.items():
     print(f'{minha_chave} = {meu_valor}')
 
 ```
+
+## Controle de Erros (Exceptions)
+
+Permite que você identifique que ocorreu um erro em um código.
+Seu tratamento deve ser do mais específico para o mais genérico.
+
+Exemplo:
+```Python
+valor = int(input('Digite um valor inteiro'))
+```
+
+No caso acima, caso seja informado um valor com decimais ou um texto, seu programa será encerrado com erro. Para controlar isso, podemos fazer:
+
+Exemplo:
+```Python
+try:
+    valor = int(input('Digite um valor inteiro'))
+except:
+    print('Não foi possivel converter o valor informado para um número inteiro')
+```
+
+Dentro do Try, você pode colocar um conjunto de códigos e qualquer problema poderá ser tratado.
+
+Exemplo:
+```Python
+try:
+    valor = int(input('Digite um valor inteiro'))
+    valor2 = int(input('Digite outro valor inteiro'))
+    valor3 = valor / valor2
+    print(valor3)
+except:
+    print('Não foi possivel converter o valor informado para um número inteiro')
+```
+Ou seja, no exemplo acima, o usuario pode colocar um valor invalido para valor, valor2. E com isso, a mensagem será informada (e com uma mensagem coerente).
+
+Agora, caso o usuario informe 3 em valor e 0 (zero) no valor2, receberemos a mesma mensagem. mas, o erro efetivamente foi outro.
+
+Para evitar, podemos colocar excessões mais especificas. E devemos deixar o mais genérico (except) por ultimo.
+
+Exemplo:
+```Python
+try:
+    valor = int(input('Digite um valor inteiro'))
+    valor2 = int(input('Digite outro valor inteiro'))
+    valor3 = valor / valor2
+    print(valor3)
+except ValueError:    
+    print('Não foi possivel converter o valor informado para um número inteiro')
+except ZeroDivisionError:    
+    print('Não foi possivel efetuar uma divisão por zero')    
+except:
+    print('Aconteceu um erro qualquer.')    
+```
