@@ -28,6 +28,13 @@ def newFoneContact():
 
     print('\nContato Registrado.')
 
+#Função para listar os contatos existentes no dicionário
+def listFoneContacts():
+    os.system('cls')    
+    print('***** AGENDA ATUALIZADA *****')
+
+    for lnome, ltel in ldic_listatel.items():
+        print(f'{lnome.upper()} : {ltel}')
 
 
 #Iniciando o programa
