@@ -45,6 +45,3 @@ for minha_chave, meu_valor in MyGroup.items():
     print(f'{minha_chave} = {meu_valor}')
 
 ```
-
-
-
