@@ -1,15 +1,24 @@
 import customtkinter as ctk
 
-class cEntry():
-    def __init__(self) -> None:
-        pass
+class cEntry(ctk.CTkEntry):
+    def __init__(self, txtLabel, txtPlaceholder, pwdFmt=False) -> None:
+        self.txtLabel = txtLabel
+        self.txtPlaceholder = txtPlaceholder
+        self.pwdFmt = pwdFmt
 
-    def create(self, txtLabel, txtPlaceholder):
-        lblObj = ctk.CTkLabel(app, text=txtLabel)
-        entryObj = ctk.CTkEntry(app, placeholder_text=txtPlaceholder)
+        lblObj = ctk.CTkLabel(app, text=self.txtLabel)
+
+        if self.pwdFmt == True:
+            entryObj = ctk.CTkEntry(app, placeholder_text=self.txtPlaceholder, show="*")
+        else:    
+            entryObj = ctk.CTkEntry(app, placeholder_text=self.txtPlaceholder)
+
         lblObj.grid()
         entryObj.grid()
 
+def valida_usuario():        
+    print(f'usuario: {lblLogin.get()}')
+    print(f'senha: {lblPwd.get()}')
 
 ctk.set_appearance_mode("system")
 app = ctk.CTk()
@@ -17,15 +26,12 @@ app = ctk.CTk()
 app.geometry("300x400")
 app.title("Tela de Login")
 
-lblLogin = cEntry()
-lblLogin.create('Usuário', 'Quem sou eu?')
-
-lblPwd = cEntry()
-lblPwd.create('Senha', 'Qual a palavra secreta?')
+lblLogin = cEntry('Usuário', 'Quem sou eu?')
+lblLogin.pack()
+lblPwd = cEntry('Senha', 'Qual a palavra secreta?', True)
+lblPwd.pack()
+lbtn = ctk.CTkButton(app, text="Validar", command=valida_usuario)
+lbtn.grid(pady=10)
 
 app.grid_columnconfigure(0, weight=1)
-#dialog = ctk.CTkInputDialog(text="Type in a number:", title="Test")
-#text = dialog.get_input()  # waits for input
-
-
 app.mainloop()
