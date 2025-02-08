@@ -27,9 +27,7 @@ app.geometry("300x400")
 app.title("Tela de Login")
 
 lblLogin = cEntry('Usuário', 'Quem sou eu?')
-lblLogin.pack()
 lblPwd = cEntry('Senha', 'Qual a palavra secreta?', True)
-lblPwd.pack()
 lbtn = ctk.CTkButton(app, text="Validar", command=valida_usuario)
 lbtn.grid(pady=10)
 
