@@ -35,9 +35,13 @@ def enviar_bd():
 
     try:
         lvazio = 0
+        lmsgerro = ''
         for campo, valor in lDictCliente.items():
             if not valor.strip():
-                print(f'O campo {campo} não pode estar vazio')
+                if lvazio == 0:
+                    lmsgerro = f'O campo {campo} não pode estar vazio.'
+                else:  
+                    lmsgerro = lmsgerro + f'\nO campo {campo} não pode estar vazio.'  
                 lvazio += 1
 
         if lvazio == 0:
@@ -47,6 +51,9 @@ def enviar_bd():
             conexao.commit()
 
             diag = DialogWindow('Dados Cadastrados').wm_transient(main)
+        else: 
+            diag = DialogWindow(lmsgerro).wm_transient(main)   
+            
     except: 
         print('Ooops, deu ruim')
 
